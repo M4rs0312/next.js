@@ -6,7 +6,7 @@ export default function Home() {
       <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
         <Image
           className="dark:invert"
-          src="/next.svg"
+          src="/bono.png"
           alt="Next.js logo"
           width={180}
           height={38}
@@ -15,12 +15,12 @@ export default function Home() {
         <ol className="font-mono list-inside list-decimal text-sm/6 text-center sm:text-left">
           <li className="mb-2 tracking-[-.01em]">
             <code className="bg-black/[.05] dark:bg-white/[.06] font-mono font-semibold px-1 py-0.5 rounded">
-              디지노리 민경국 입니다.
+              안녕하세요 정회성입니다.
             </code>
             .
           </li>
           <li className="tracking-[-.01em]">
-            테스트 할 수 없은 건 만들 수 없다
+            앞으로 잘 부탁드립니다.
           </li>
         </ol>
 
