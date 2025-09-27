@@ -13,10 +13,10 @@ async function getResumeInfo() {
 
 
 export default async function Home() {
-	const data = await getResumeInfo();
+  const data = await getResumeInfo();
 
-      	return (
-    <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
+        return (
+    <div className="font-sans grid grid-rows-[20px_1fr_auto] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
       <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
         <Image
           className="dark:invert"
@@ -29,18 +29,51 @@ export default async function Home() {
         <ol className="font-mono list-inside list-decimal text-sm/6 text-center sm:text-left">
           <li className="mb-2 tracking-[-.01em]">
             <code className="bg-black/[.05] dark:bg-white/[.06] font-mono font-semibold px-1 py-0.5 rounded">
-              안녕하세요 {data.name}입니다
+              안녕하세요 비전공자 {data.name}입니다
             </code>
             .
           </li>
           <li className="tracking-[-.01em]">
-            앞으로 잘 부탁드립니다.
+            부족한 부분이 많겠지만 앞으로 잘 부탁드립니다.
           </li>
         </ol>
 
         
       </main>
-      
+      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
+        <a
+          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
+          href="https://github.com/M4rs0312/next.js"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <Image
+            className="dark:invert"
+            aria-hidden
+            src="/github.png"
+            alt="github icon"
+            width={16}
+            height={16}
+          />
+          My github
+        </a>
+        <a
+          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
+          href="https://github.com/lgcns-2nd-mp"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <Image
+            className="dark:invert"
+            aria-hidden
+            src="/github.png"
+            alt="github icon"
+            width={16}
+            height={16}
+          />
+          요기조기
+        </a>
+      </footer>
       
     </div>
   );
