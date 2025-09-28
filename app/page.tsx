@@ -17,21 +17,26 @@ export default async function Home() {
 
         return (
     <div className="font-sans grid grid-rows-[20px_1fr_auto] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
+      <header className="row-start-1 text-4xl font-bold tracking-tight">
+        Resume
+      </header>
+      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start -mt-6">
         <Image
           className="dark:invert"
           src="/bono.png"
           alt="Next.js logo"
-          width={180}
+          width={200}
           height={38}
           priority
         />
         <ol className="font-mono list-inside list-decimal text-sm/6 text-center sm:text-left">
           <li className="mb-2 tracking-[-.01em]">
             <code className="bg-black/[.05] dark:bg-white/[.06] font-mono font-semibold px-1 py-0.5 rounded">
-              안녕하세요 비전공자 {data.name}입니다
+              안녕하세요 비전공자 {data.name}입니다.
             </code>
-            .
+          </li>
+          <li className="tracking-[-.01em]">
+            아직은 초라한 페이지이지만 채워질 날을 기대하고 있습니다.
           </li>
           <li className="tracking-[-.01em]">
             부족한 부분이 많겠지만 앞으로 잘 부탁드립니다.
